@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+*{
+	-webkit-box-sizing:content-box!important;
+}
+
+div{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: rgba(0,128,255,.10);
+}
+
+@font-face
+{
+	font-family: myfont;
+	src: url('Elite_Hacker.ttf');
+}
+
+@keyframes frames1
+{
+	0% {left: 0px;}
+	100% {left: 600px}
+}
+
+@keyframes frames2
+{
+	0% {left: 650px;}
+	100% {left: 0px;}
+}
+
+.my-header{
+	position: relative;
+	height: 350px;
+}
+
+.my-body{
+	position: relative;
+	height: 300px;
+}
+.container{
+	position: absolute;
+	width: 800px;
+	height: 20px;
+	left: 650px;
+	right: auto;
+}
+
+.container:before,.container:after{
+	content: " ";
+	display: table;
+}
+
+.before-content
+{
+	clear: left;
+}
+
+.my-content{
+	font-family: myfont;
+	position: relative;
+	top: 135px;
+	float: left;
+	font-size: 22px;
+}
+
+.my-footer{
+
+}
+
+
+#seeyou{
+	font-size: 275%;
+	color: black;
+	text-decoration: none;
+}
+
+#hr1{
+	position: absolute;
+	border: 2px rgba(255,255,255,1) solid;
+	width: 1200px;
+	left: 0px;
+	animation:frames1 2s;
+	animation-fill-mode: forwards;
+}
+
+#hr2{
+	border: 2px rgba(255,255,255,1) solid;
+	width: 1200px;
+	left: 650px;
+	position: absolute;
+	animation:frames2 2s;
+	animation-fill-mode: forwards;
+}
+

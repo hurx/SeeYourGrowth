@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+div#top {
+	background-color:black;
+	height:230px;
+	position:relative;
+	}
+	
+div#top1{
+	color:white;
+	font-size:200px;
+	text-align:center;
+}
+
+div#top2{
+	color:white;
+	font-size:46px;
+	position:absolute;
+	left:870px;
+	top:170px;
+}
